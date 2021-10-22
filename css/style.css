@@ -146,9 +146,9 @@ body {
 }
 
 /* 2번째 컨텐츠 박스 설정 */
-.wrap #circle .face2 {
+/* .wrap #circle .face2 {
   display: block;
-}
+} */
 .wrap #circle .face2 .inner > div {
   width: 100%;
   height: 100%;
@@ -165,4 +165,57 @@ body {
 .wrap #circle .face2 .inner > div p {
   font: 18px/1.3 'arial';
   color: #ccc;
+}
+
+/* 3번째 컨텐츠 박스 설정 */
+.wrap #circle .face3 {
+  display: block;
+}
+.wrap #circle .face3 .inner > div {
+  width: 100%;
+  height: 253px;
+  margin-bottom: 20px;
+}
+.wrap #circle .face3 .inner > div .pic {
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  float: left;
+  position: relative;
+  top: 15px;
+  background-size: cover;
+}
+/* 배경으로 프로필 이미지 처리 */
+.wrap #circle .face3 .inner > div:nth-of-type(1) .pic {
+  background-image: url(../images/member1.jpg);
+}
+.wrap #circle .face3 .inner > div:nth-of-type(2) .pic {
+  background-image: url(../images/member2.jpg);
+}
+.wrap #circle .face3 .inner > div:nth-of-type(3) .pic {
+  background-image: url(../images/member3.jpg);
+}
+.wrap #circle .face3 .inner > div .con {
+  width: 340px;
+  float: right;
+}
+.wrap #circle .face3 .inner > div .con h2 {
+  color: #fff;
+}
+.wrap #circle .face3 .inner > div .con p {
+  font: 18px/1.3 'arial';
+  color: #ddd;
+  margin-top: 20px;
+}
+.wrap #circle .face3 .inner > div .con span {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font: 12px/1 'orbitron';
+  color: aqua;
+  opacity: 0.5;
 }
