@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+/* CSS 초기화 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+body {
+  font: 17px/1.4 'orbitron';
+  letter-spacing: 1px;
+  color: #ddd;
+  background: #000;
+}
+
+.wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  perspective: 1300;
+}
+
+/* .wrap > video 대신 이미지 사용  */
+.wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  opacity: 0.5;
+}
+
+.wrap #circle {
+  width: 600px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid aqua;
+}
+
+.wrap#circle article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.wrap #circle article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.wrap #circle article h1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 30px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+/* article hover 시 제목이 위로서서히 나타남 */
+.wrap #circle article:hover h1 {
+  top: -60px;
+  opacity: 1;
+}
+.wrap #circle article .inner {
+  width: 100%;
+  height: 100%;
+}
+.wrap #circle article .inner > div {
+  width: 100%;
+  height: 100%;
+  border: 1px solidrgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 50px;
+  position: relative;
+  opacity: 0.7;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* hover 시 div박스 약간 진하게 활성화 및 확대 */
+.wrap #circle article .inner > div:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.03);
+  opacity: 1;
+}
