@@ -91,7 +91,7 @@ body {
 .wrap #circle article .inner > div {
   width: 100%;
   height: 100%;
-  border: 1px solidrgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.06);
   padding: 50px;
@@ -221,9 +221,9 @@ body {
 }
 
 /* 4번째 컨텐츠 박스 설정 */
-.wrap #circle .face4 {
+/* .wrap #circle .face4 {
   display: block;
-}
+} */
 .wrap #circle .face4 .inner > div p {
   font: 16px/1.3 'arial';
   color: #bbb;
@@ -251,4 +251,53 @@ body {
   font-size: 12px;
   color: #ccc;
   margin-top: 23px;
+}
+
+/* 5번째 컨텐츠 박스 설정 */
+.wrap #circle .face5 {
+  display: block;
+}
+.wrap #circle .face5 .inner > div {
+  width: 100%;
+  height: 100%;
+}
+.wrap #circle .face5 .inner > div img {
+  margin-bottom: 40px;
+}
+.wrap #circle .face5 .inner div .pic {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3) url(../images/aboutMe.jpg) no-repeat top
+    center/cover;
+  margin-bottom: 50px;
+}
+.wrap #circle .face5 .inner > div h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.wrap #circle .face5 .inner > div p {
+  font: 18px/1.3 'arial';
+  color: #ccc;
+}
+.wrap #circle .face5 .inner > div a {
+  display: block;
+  width: 180px;
+  height: 32px;
+  margin: 40px auto 20px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'arial';
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  border: 3px solid #fff;
+}
+.wrap #circle .face5 .inner > div:hover a {
+  color: lightcyan;
+  text-shadow: 0 0 10px aqua;
+  transform: scale(1.2);
+  transition: all 0.5s;
+  border: 3px solid lightcyan;
 }
