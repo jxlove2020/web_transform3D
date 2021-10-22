@@ -31,7 +31,6 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  perspective: 1300;
 }
 
 /* .wrap > video 대신 이미지 사용  */
@@ -50,7 +49,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid aqua;
+  perspective: 1300px;
+  /* border: 1px solid aqua; */
 }
 
 .wrap #circle article {
@@ -68,6 +68,7 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
+  backface-visibility: hidden; /* 반대쪽인 뒷면을 숨김 처리 */
 }
 .wrap #circle article h1 {
   position: absolute;
@@ -468,4 +469,30 @@ body {
   position: absolute;
   top: 0;
   right: 40px;
+}
+
+/* 3D 형태로 컨텐츠 박스 영역 배치 */
+.face1 {
+  transform: rotateY(0deg) translateZ(-764px);
+}
+.face2 {
+  transform: rotateY(45deg) translateZ(-764px);
+}
+.face3 {
+  transform: rotateY(90deg) translateZ(-764px);
+}
+.face4 {
+  transform: rotateY(135deg) translateZ(-764px);
+}
+.face5 {
+  transform: rotateY(180deg) translateZ(-764px);
+}
+.face6 {
+  transform: rotateY(225deg) translateZ(-764px);
+}
+.face7 {
+  transform: rotateY(270deg) translateZ(-764px);
+}
+.face8 {
+  transform: rotateY(315deg) translateZ(-764px);
 }
